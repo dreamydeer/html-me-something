@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: JeanSunHo;
+    src: url(JeanSunHo.ttf);
+}
+
+@keyframes hoverzoom {
+    0% {max-height: 400px;}
+    100% {max-height: 700px}
+}
+
+body {
+    background-color: rgb(247, 247, 201);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: JeanSunHo, 'Times New Roman', Times, serif;
+    font-size: 65pt;
+    text-align: center;
+    background-color: rgb(255, 211, 218);
+    border-radius: 20px;
+    margin: 40px;
+    padding: 10px;
+    background-image: 
+    /* linear-gradient(to bottom, pink, rgba(255, 192, 203, 0.356)), */
+    url(bookshelfpic.png);
+    background-position: 100px;
+}
+
+h2 {
+    font-size:25pt;
+}
+
+#books-article {
+    margin: 100px;
+}
+
+.book-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-section:nth-child(even) .book-flexbox {
+    flex-direction: row-reverse;
+}
+
+.book-summary {
+    font-size: 17pt;
+    margin: 16px 40px;
+}
+
+.book-section {
+    background-color: rgb(227, 227, 248);
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 10px 15px;
+}
+
+.book-cover img {
+    max-height: 400px;
+}
+
+.book-cover img:hover {
+    animation-name: hoverzoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+main {
+    background-color: rgb(250, 210, 217);
+    border-radius: 50px;
+    padding: 25px;
+    margin: 75px;
+    font-size: 18pt;
+    box-shadow: 10px 15px;
+}
+
+.second-paragraph {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .book-flexbox {
+        flex-direction: column;
+    }
+    .book-section:nth-child(even) .book-flexbox {
+        flex-direction: column;
+    }
+}
