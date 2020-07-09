@@ -10,7 +10,11 @@
 }
 
 body {
-    background-color: rgb(247, 247, 201);
+    background-image: url(background.jpg);
+    background-color: rgb(178, 218, 236);
+    margin: 0;
+    margin-top: 205px;
+
 }
 
 h1 {
@@ -18,18 +22,21 @@ h1 {
     font-family: JeanSunHo, 'Times New Roman', Times, serif;
     font-size: 65pt;
     text-align: center;
-    background-color: rgb(255, 211, 218);
-    border-radius: 20px;
-    margin: 40px;
+    background-color: rgb(198, 218, 235);
+    margin: 0;
     padding: 10px;
-    background-image: 
-    /* linear-gradient(to bottom, pink, rgba(255, 192, 203, 0.356)), */
-    url(bookshelfpic.png);
+    /* background-image: url(bookshelfpic.png); */
+    top: 0;
+    position: fixed;
+    width: 100%;
     background-position: 100px;
+    border-bottom: 4px white solid;
+    text-shadow: 1px 1px black;
 }
 
 h2 {
     font-size:25pt;
+    margin-bottom: 0px;
 }
 
 #books-article {
@@ -47,6 +54,26 @@ h2 {
     flex-direction: row-reverse;
 }
 
+.book-section:nth-child(1) {
+    background-color: rgb(209, 236, 209);
+}
+
+.book-section:nth-child(2) {
+    background-color: rgb(231, 231, 231);
+}
+
+.book-section:nth-child(3) {
+    background-color: rgb(219, 205, 231);
+}
+
+.book-section:nth-child(4) {
+    background-color: rgb(209, 216, 252);
+}
+
+.book-section:nth-child(5) {
+    background-color: rgb(238, 241, 191);
+}
+
 .book-summary {
     font-size: 17pt;
     margin: 16px 40px;
@@ -57,6 +84,8 @@ h2 {
     border-radius: 50px;
     text-align: center;
     padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 30px;
     margin-top: 100px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -76,10 +105,14 @@ h2 {
 main {
     background-color: rgb(250, 210, 217);
     border-radius: 50px;
-    padding: 25px;
-    margin: 75px;
+    padding: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px auto;
+    width: 50%;
     font-size: 18pt;
     box-shadow: 10px 15px;
+
 }
 
 .second-paragraph {
