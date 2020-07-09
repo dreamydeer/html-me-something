@@ -92,6 +92,10 @@ h2 {
     box-shadow: 10px 15px;
 }
 
+.book-cover {
+    margin-top: 45px;
+}
+
 .book-cover img {
     max-height: 400px;
 }
@@ -114,6 +118,17 @@ main {
     box-shadow: 10px 15px;
 
 }
+
+.pageFooter {
+    text-align: center;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.829);
+    border-radius: 50px;
+    width: 175px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
 
 .second-paragraph {
     text-align: center;
